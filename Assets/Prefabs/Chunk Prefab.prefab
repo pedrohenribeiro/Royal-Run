@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1986109089200055844}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: -0.66, z: 0}
   m_LocalScale: {x: 10, y: 1, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -106,8 +106,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.1229337, z: 1}
+  m_Center: {x: 0, y: 0.06146711, z: 0}
 --- !u!1 &2069263130293638296
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,6 +117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2422013993634216933}
+  - component: {fileID: -1956422962515531724}
   m_Layer: 0
   m_Name: Chunk Prefab
   m_TagString: Untagged
@@ -133,13 +134,35 @@ Transform:
   m_GameObject: {fileID: 2069263130293638296}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.021, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5444311775302960817}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1956422962515531724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069263130293638296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b36eec3a67abd4e8d2d6a20c5cd42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fencePrefab: {fileID: 2065536675373104832, guid: 32627c44cba9a3042bfd57a5e458cf38, type: 3}
+  applePrefab: {fileID: 1417627509216417578, guid: fc66e037472930a4ea57c15174c2b837, type: 3}
+  coinPrefab: {fileID: 3801822681618412428, guid: 8fd42f786f9eb894293534e413befbf7, type: 3}
+  appleSpawnChance: 0.3
+  coinSpawnChance: 0.5
+  coinSeparationLength: 2
+  lanes:
+  - -3
+  - 0
+  - 3
 --- !u!1 &3781158788821798433
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,7 +217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8703487618186899191, guid: 3354a2fee23c9fc45a513927cd492e15, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.16000003
       objectReference: {fileID: 0}
     - target: {fileID: 8703487618186899191, guid: 3354a2fee23c9fc45a513927cd492e15, type: 3}
       propertyPath: m_LocalPosition.z
@@ -260,7 +283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6317427368463412491, guid: 5f28e8a76fb078c4ab5d1543c3a3e4ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0.03999996
       objectReference: {fileID: 0}
     - target: {fileID: 6317427368463412491, guid: 5f28e8a76fb078c4ab5d1543c3a3e4ae, type: 3}
       propertyPath: m_LocalPosition.z
@@ -360,7 +383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6317427368463412491, guid: 5f28e8a76fb078c4ab5d1543c3a3e4ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0.03999996
       objectReference: {fileID: 0}
     - target: {fileID: 6317427368463412491, guid: 5f28e8a76fb078c4ab5d1543c3a3e4ae, type: 3}
       propertyPath: m_LocalPosition.z
@@ -456,7 +479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8703487618186899191, guid: 3354a2fee23c9fc45a513927cd492e15, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.16000003
       objectReference: {fileID: 0}
     - target: {fileID: 8703487618186899191, guid: 3354a2fee23c9fc45a513927cd492e15, type: 3}
       propertyPath: m_LocalPosition.z
