@@ -452,6 +452,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1956422962515531724, guid: a61cab5df6cbb714bb63f12cb254873e, type: 3}
+      propertyPath: coinSpawnChance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1956422962515531724, guid: a61cab5df6cbb714bb63f12cb254873e, type: 3}
+      propertyPath: appleSpawnChance
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2069263130293638296, guid: a61cab5df6cbb714bb63f12cb254873e, type: 3}
       propertyPath: m_Name
       value: CheckPoint
